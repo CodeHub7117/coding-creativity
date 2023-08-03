@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <div class="container">
+            <h2>Registration Form</h2>
+            <form method="" onsubmit="return submitForm()">
+                <div class="form-name">
+                    First Name:
+                    <input type="text" id="fname" placeholder="First Name">
+                    <span class="error" id="fnameError" style="color: red; font-size: 13px;"></span>
+                </div>
+                <div class="form-name">
+                    Last Name:
+                    <input type="text" id="lname" placeholder="Last Name">
+                    <span class="error" id="lnameError" style="color: red; font-size: 13px;"></span>
+                </div>
+                <div class="form-country">
+                    <tr>
+                        <td>
+                            Country:
+                        </td>
+                        <td>
+                            <select id="country" name="country">
+                                <option value="">Select Country</option>
+                                <option value="India">India</option>
+                                <option value="USA">USA</option>
+                                <option value="Australia">Australia</option>
+                                <option value="Canada">Canada</option>
+                            </select>
+                            <span class="error" id="countryError" style="color: red; font-size: 13px;"></span>
+                        </td>
+                    </tr>
+                </div>
+                <div class="form-state" style="display: none;">
+                    <tr>
+                        <td>
+                            State:
+                        </td>
+                        <td>
+                            <select id="output" name="state">
+                                <option value="ss" disabled selected>Select State</option>
+                            </select>
+                            <span class="error" id="stateError" style="color: red; font-size: 13px;"></span>
+                        </td>
+                    </tr>
+                </div>
+                <div class="form-zipcode">
+                    Zip Code:
+                    <input type="text" id="zip" name="zip">
+                    <span class="error" id="zipError" style="color: red; font-size: 13px;"></span>
+                </div>
+                <div class="form-email">
+                    Email:
+                    <input type="text" id="email" name="email">
+                    <span class="error" id="emailError" style="color: red; font-size: 13px;"></span>
+                </div>
+                <div class="form-gender">
+                    Gender:
+                    <div id="radio-btn">
+                        <label><input type="radio" name="radio" class="gender-validation" value="male" id="radio1"> Male</label>
+                        <label><input type="radio" name="radio" class="gender-validation" value="female" id="radio2"> Female</label>
+                        <label><input type="radio" name="radio" class="gender-validation" value="other" id="radio3" /> Other</label>
+                    </div>
+                </div>
+                <span class="error" id="genderError" style="color: red; font-size: 13px;"></span>
+                <div class="form-language">
+                    Languages:
+                    <div class="checkbox-group">
+                        <label><input type="checkbox" class="checkbox-item" name="language" value="english" id="english"> English</label>
+                        <label><input type="checkbox" class="checkbox-item" name="language" value="marathi" id="marathi"> Marathi</label>
+                        <label><input type="checkbox" class="checkbox-item" name="language" value="hindi" id="hindi"> Hindi</label>
+                    </div>
+                </div>
+                <span class="error" id="langError" style="color: red; font-size: 13px;"></span>
+                <div class="form-pass">
+                    Password:
+                    <input type="password" id="password" name="password">
+                    <span class="error" id="passError" style="color: red; font-size: 13px;"></span>
+                </div>
+                <div class="form-cpass">
+                    Confirm Password:
+                    <input type="password" id="confirmPassword" name="confirmPassword">
+                    <span class="error" id="cpasstrue" style="color:green; font-size: 13px;"></span>
+                    <span class="error" id="cpassError" style="color: red; font-size: 13px;"></span>
+                </div>
+                <div class="form-moblie">
+                    Mobile Number:
+                    <input type="text" id="phoneNumber" name="phoneNumber">
+                    <span class="error" id="mobileError" style="color: red; font-size: 13px;"></span>
+                </div>
+                <div class="form-dob">
+                    Date Of Birth:
+                    <input type="date" id="dob" name="dob">
+                    <span class="error" id="dobError" style="color: red; font-size: 13px;"></span>
+                </div>
+                <button type="submit" id="submit">Register</button>
+            </form>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"
+        integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

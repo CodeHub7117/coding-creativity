@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Signika+Negative&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+    font-family: 'Signika Negative', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #f9f9f9;
+}
+
+.container * {
+  margin: 6.7px 0;
+}
+
+select,
+input[type="text"], input[type="email"], input[type="password"], select, input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+.radio-btn{ margin: 0 14px;}
+
+.radio-btn  input { margin: 9px;}
+
+.form-gender {
+    display: flex;
+    align-items: center;
+}
+
+.form-gender span{
+  margin: 0 10px;
+}
+
+.form-language {
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-group { margin: 0 15px; }
+
+.checkbox-group label { margin: 9px;}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+input:focus {
+  outline: none;
+  border-color: #4CAF50;
+  box-shadow: 0 0 5px #4CAF50;
+}
